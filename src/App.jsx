@@ -78,6 +78,34 @@ function Hero() {
 }
 
 
+// helper to URL-encode form data the way Netlify expects
+function encodeForm(data) {
+  return new URLSearchParams(data).toString();
+}
+
+function handleContactSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+
+  // build the payload Netlify Forms expects
+  const payload = {
+    "form-name": form.getAttribute("name"),
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+    "bot-field": form["bot-field"]?.value || "",
+  };
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encodeForm(payload),
+  })
+    .then(() => (window.location.href = "/thanks.html"))
+    .catch(() => alert("Submission failed. Please try again."));
+}
+
+
 export default function App() {
   return (
     <div>
@@ -178,13 +206,13 @@ export default function App() {
   </p>
 
   <form
-    name="contact"
-    method="POST"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    action="/thanks.html"
-    className="grid gap-4 max-w-xl not-prose"
-  >
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  onSubmit={handleContactSubmit}
+  className="grid gap-4 max-w-xl not-prose"
+>
     {/* Netlify required hidden input */}
     <input type="hidden" name="form-name" value="contact" />
 
