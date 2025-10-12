@@ -115,7 +115,7 @@ export default function App() {
     </div>
         <img
       src="/headshot.png"
-      alt="Michelle Greenberg, LCSW"
+      alt="Michelle Greenberg, LCSW-C"
       className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow justify-self-center md:justify-self-end"
     /></div>
       </Section>
@@ -133,7 +133,7 @@ export default function App() {
       <Section id="approach" title="Approach">
         <p>
           I work from a strengths-based, collaborative perspective. While I have trained across modalities, my current work emphasizes
-          <strong> Mindfulness-Based Stress Reduction (MBSR)</strong> to build awareness, flexibility, and calm. (Per your request, no CBT/ACT listed.)
+          <strong> Mindfulness-Based Stress Reduction (MBSR)</strong> to build awareness, flexibility, and calm. 
         </p>
       </Section>
 
