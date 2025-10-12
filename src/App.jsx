@@ -212,7 +212,7 @@ export default function App() {
   data-netlify-honeypot="bot-field"
   onSubmit={handleContactSubmit}
   className="grid gap-4 max-w-xl not-prose"
->
+netlify>
     {/* Netlify required hidden input */}
     <input type="hidden" name="form-name" value="contact" />
 
