@@ -98,7 +98,7 @@ export default function App() {
           <ul className="list-disc ml-5 space-y-1">
             <li>B.S., Emory University</li>
             <li>Master of Social Work (MSW), Columbia University</li>
-            <li>Licensed Clinical Social Worker (LCSW)</li>
+            <li>Licensed Clinical Social Worker (LCSW-C)</li>in Maryland
           </ul>
         </div>
         <div className="rounded-2xl border p-5">
@@ -120,6 +120,7 @@ export default function App() {
           <li>Emotion regulation & stress management</li>
           <li>Family communication and routines</li>
           <li>Life transitions and caregiver support</li>
+          <li>Anxiety, Depression and Chronic Illnesst</li>
         </ul>
       </Section>
 
@@ -136,8 +137,8 @@ export default function App() {
             <h3 className="font-medium mb-2">Sessions</h3>
             <ul className="list-disc ml-5 space-y-1">
               <li>Initial consultation (20–30 min): complimentary</li>
-              <li>Individual session (50 min): $— set your rate here</li>
-              <li>Parent consultation (50 min): $— set your rate here</li>
+              <li>Individual session (60 min): $— \215</li>
+              <li>Parent consultation (50 min): $— 195</li>
             </ul>
           </div>
           <div className="rounded-2xl border p-5">
