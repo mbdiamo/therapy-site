@@ -135,11 +135,14 @@ export default function App() {
       </Section>
 
       <Section id="approach" title="Approach">
-        <p>
-          I work from a strengths-based, collaborative perspective. While I have trained across modalities, my current work emphasizes
-          <strong> Mindfulness-Based Stress Reduction (MBSR)</strong> to build awareness, flexibility, and calm. 
-        </p>
-      </Section>
+  <p>
+    I work from a strengths-based, collaborative perspective. I strive to provide encouragement knowing that progress is well within reach. 
+    I have a nurturing and empathic style that helps individuals and families feel safe and comfortable. 
+    I believe trust and safety in the therapeutic relationship are paramount. 
+    While I have trained across modalities, my current work emphasizes 
+    <strong> Mindfulness-Based Stress Reduction (MBSR)</strong> to build awareness, flexibility, and calm.
+  </p>
+</Section>
 
       <Section id="services" title="Services & Fees">
         <div className="grid md:grid-cols-2 gap-6 not-prose">
