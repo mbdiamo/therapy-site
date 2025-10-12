@@ -164,7 +164,7 @@ export default function App() {
           <li>Emotion regulation & stress management</li>
           <li>Family communication and routines</li>
           <li>Life transitions</li>
-          <li>Anxiety, Depression and Chronic Illnesst</li>
+          <li>Anxiety, Depression and Chronic Illness</li>
         </ul>
       </Section>
 
