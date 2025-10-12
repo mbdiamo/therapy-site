@@ -93,14 +93,15 @@ export default function App() {
       </p>
 
       <div className="mt-6 grid md:grid-cols-2 gap-6">
-        <div className="rounded-2xl border p-5">
-          <h3 className="font-medium mb-2">Credentials</h3>
-          <ul className="list-disc ml-5 space-y-1">
-            <li>B.S., Emory University</li>
-            <li>Master of Social Work (MSW), Columbia University</li>
-            <li>Licensed Clinical Social Worker (LCSW-C)</li>in Maryland
-          </ul>
-        </div>
+  <div className="rounded-2xl border p-5 max-w-xl mx-auto">
+    <h3 className="font-medium mb-2">Credentials</h3>
+    <ul className="list-disc ml-5 space-y-1">
+      <li>B.S., Emory University</li>
+      <li>Master of Social Work (MSW), Columbia University</li>
+      <li>Licensed Clinical Social Worker (LCSW-C) in Maryland</li>
+    </ul>
+  </div>
+</div>
         <div className="rounded-2xl border p-5">
           <h3 className="font-medium mb-2">Availability</h3>
           <p>Telehealth only. Currently accepting new clients for virtual sessions.</p>
@@ -137,8 +138,8 @@ export default function App() {
             <h3 className="font-medium mb-2">Sessions</h3>
             <ul className="list-disc ml-5 space-y-1">
               <li>Initial consultation (20–30 min): complimentary</li>
-              <li>Individual session (60 min): $— \215</li>
-              <li>Parent consultation (50 min): $— 195</li>
+              <li>Individual session (60 min): $ 215</li>
+              <li>Parent consultation (50 min): $ 195</li>
             </ul>
           </div>
           <div className="rounded-2xl border p-5">
