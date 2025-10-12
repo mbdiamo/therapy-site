@@ -173,35 +173,46 @@ export default function App() {
       </Section>
 
       <Section id="contact" title="Contact">
-        <p className="mb-6">
-          Please share a few details below. I’ll be in touch to schedule a brief consultation.
-        </p>
+  <p className="mb-6">
+    Please share a few details below. I’ll be in touch to schedule a brief consultation.
+  </p>
 
-        {/* Netlify Forms integration */}
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          className="grid gap-4 max-w-xl not-prose"
-        >
-          {/* Netlify hidden input */}
-          <input type="hidden" name="form-name" value="contact" />
-          <label className="block">
-            <span className="text-sm">Name</span>
-            <input name="name" required className="mt-1 w-full rounded-lg border px-3 py-2" />
-          </label>
-          <label className="block">
-            <span className="text-sm">Email</span>
-            <input type="email" name="email" required className="mt-1 w-full rounded-lg border px-3 py-2" />
-          </label>
-          <label className="block">
-            <span className="text-sm">Message</span>
-            <textarea name="message" rows="4" className="mt-1 w-full rounded-lg border px-3 py-2" />
-          </label>
-          <button className="rounded-xl bg-slate-900 text-white px-5 py-2 w-fit">Send</button>
-          <p className="text-xs text-slate-500">By submitting, you consent to being contacted by email.</p>
-        </form>
-      </Section>
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    action="/thanks"              // send to a static thank-you page
+    className="grid gap-4 max-w-xl not-prose"
+  >
+    {/* Netlify required hidden input */}
+    <input type="hidden" name="form-name" value="contact" />
+
+    {/* Honeypot field (hidden from humans) */}
+    <p className="hidden">
+      <label>Don’t fill this out: <input name="bot-field" /></label>
+    </p>
+
+    <label className="block">
+      <span className="text-sm">Name</span>
+      <input name="name" required className="mt-1 w-full rounded-lg border px-3 py-2" />
+    </label>
+
+    <label className="block">
+      <span className="text-sm">Email</span>
+      <input type="email" name="email" required className="mt-1 w-full rounded-lg border px-3 py-2" />
+    </label>
+
+    <label className="block">
+      <span className="text-sm">Message</span>
+      <textarea name="message" rows="4" className="mt-1 w-full rounded-lg border px-3 py-2" />
+    </label>
+
+    <button className="rounded-xl bg-slate-900 text-white px-5 py-2 w-fit">Send</button>
+    <p className="text-xs text-slate-500">By submitting, you consent to being contacted by email.</p>
+  </form>
+</Section>
+
 
       <footer className="border-t">
         <div className="max-w-5xl mx-auto px-4 py-8 text-sm text-slate-600">
