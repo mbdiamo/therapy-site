@@ -85,41 +85,44 @@ export default function App() {
       <Hero />
 
       <Section id="about" title="About">
-  <div className="grid md:grid-cols-[1fr,220px] items-start gap-8 not-prose">
+  <div className="grid md:grid-cols-[1fr,240px] items-start gap-8 not-prose">
+    {/* LEFT COLUMN */}
     <div>
       <p>
         I’m an experienced licensed therapist who starts with where you are. My initial goal is to build a trusting relationship and create
         space to explore the challenges you’re experiencing. I listen, observe, and ask thoughtful questions to develop a plan together.
       </p>
 
-    <div className="mt-6 mx-auto max-w-screen-lg px-4">
-  <div className="grid md:grid-cols-2 gap-6">
-    <div className="rounded-2xl border p-5 md:p-6 w-full">
-      <h3 className="font-medium mb-2">Credentials</h3>
-      <ul className="list-disc ml-5 space-y-1">
-        <li>B.S., Emory University</li>
-        <li>Master of Social Work (MSW), Columbia University</li>
-        <li>
-          {/* keep “in Maryland” together and avoid breaking the hyphen */}
-          Licensed Clinical Social Worker (LCSW&#8209;C){' '}in&nbsp;Maryland
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+      {/* Cards: Credentials + Availability side-by-side on md+ */}
+      <div className="mt-6 grid md:grid-cols-2 gap-6">
+        <div className="rounded-2xl border p-5 md:p-6 w-full">
+          <h3 className="font-medium mb-2">Credentials</h3>
+          <ul className="list-disc ml-5 space-y-1">
+            <li>B.S., Emory University</li>
+            <li>Master of Social Work (MSW), Columbia University</li>
+            {/* keep the whole line together */}
+            <li className="whitespace-nowrap">
+              Licensed Clinical Social Worker (LCSW&#8209;C)&nbsp;in&nbsp;Maryland
+            </li>
+          </ul>
+        </div>
 
-        <div className="rounded-2xl border p-5">
+        <div className="rounded-2xl border p-5 md:p-6 w-full">
           <h3 className="font-medium mb-2">Availability</h3>
           <p>Telehealth only. Currently accepting new clients for virtual sessions.</p>
         </div>
       </div>
     </div>
-        <img
+
+    {/* RIGHT COLUMN (HEADSHOT) */}
+    <img
       src="/headshot.png"
       alt="Michelle Greenberg, LCSW-C"
       className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow justify-self-center md:justify-self-end"
-    /></div>
-      </Section>
+    />
+  </div>
+</Section>
+
 
       <Section id="specialties" title="Specialties">
         <ul className="list-disc ml-5 space-y-2">
