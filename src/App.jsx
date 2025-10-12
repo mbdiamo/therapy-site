@@ -24,7 +24,7 @@ function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
       <nav className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="#home" className="font-semibold">Michelle Greenberg, LCSW</a>
+        <a href="#home" className="font-semibold">Michelle Greenberg, LCSW-C</a>
         <ul className="hidden md:flex gap-5 text-sm">
           {links.map(([label, href]) => (
             <li key={href}><a className="hover:underline" href={href}>{label}</a></li>
