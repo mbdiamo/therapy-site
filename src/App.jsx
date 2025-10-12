@@ -182,7 +182,7 @@ export default function App() {
     method="POST"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
-    action="/thanks"              // send to a static thank-you page
+    action="/thanks"
     className="grid gap-4 max-w-xl not-prose"
   >
     {/* Netlify required hidden input */}
