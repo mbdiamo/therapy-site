@@ -53,7 +53,7 @@ function Hero() {
 
       <div className="relative max-w-2xl mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-          Compassionate Therapy — Begin Where You Are
+          Compassionate Therapy
         </h1>
         <p className="mt-6 text-lg text-sky-50">
           Creating space for reflection, growth, and resilience 
