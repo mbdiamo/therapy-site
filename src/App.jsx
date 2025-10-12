@@ -84,19 +84,13 @@ export default function App() {
       <Nav />
       <Hero />
 
-      <Section id="about" title="About">
+     <Section id="about" title="About">
   <div className="grid md:grid-cols-[1fr,240px] items-start gap-8 not-prose">
     {/* LEFT COLUMN */}
     <div className="space-y-6 leading-relaxed text-[1.05rem]">
       <p>
-        I’m an experienced licensed therapist who starts with where you are. My initial goal is to build a trusting relationship and create
-        space to explore the challenges you’re experiencing. I listen, observe, and ask thoughtful questions to develop a plan together.
-      </p>
-
-      <p>
-        With over 20 years of experience as a licensed clinical social worker, I have worked with adults, parents, and families in schools,
-        and in both domestic and international adoption, as well as private practice in Maryland. I love what I do and feel grateful to
-        support individuals and families in their journeys toward growth and connection.
+        For more than two decades, I’ve worked with adults, parents, and families across school settings and adoption services in New York City, Seattle, 
+        and San Diego, and I now offer private practice in Maryland. I’m grateful to do this work and to help people build resilience and meaningful connection.
       </p>
 
         {/* Credentials + Availability cards */}
