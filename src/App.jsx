@@ -99,20 +99,18 @@ export default function App() {
         support individuals and families in their journeys toward growth and connection.
       </p>
 
-      {/* Cards: Credentials + Availability side-by-side on md+ */}
-      <div className="mt-6 grid md:grid-cols-2 gap-6">
+        {/* Credentials + Availability cards */}
+      <div className="grid md:grid-cols-2 gap-6">
         <div className="rounded-2xl border p-5 md:p-6 w-full">
           <h3 className="font-medium mb-2">Credentials</h3>
           <ul className="list-disc ml-5 space-y-1">
             <li>B.S., Emory University</li>
             <li>Master of Social Work (MSW), Columbia University</li>
-            {/* keep the whole line together */}
-            <li className="whitespace-nowrap">
+            <li>
               Licensed Clinical Social Worker (LCSW&#8209;C)&nbsp;in&nbsp;Maryland
             </li>
           </ul>
         </div>
-
         <div className="rounded-2xl border p-5 md:p-6 w-full">
           <h3 className="font-medium mb-2">Availability</h3>
           <p>Telehealth only. Currently accepting new clients for virtual sessions.</p>
