@@ -134,13 +134,20 @@ export default function App() {
         </ul>
       </Section>
 
-      <Section id="approach" title="Approach">
-  <p>
-    I work from a strengths-based, collaborative perspective. I strive to provide encouragement knowing that progress is well within reach. 
-    I have a nurturing and empathic style that helps individuals and families feel safe and comfortable. 
-    I believe trust and safety in the therapeutic relationship are paramount. 
+<Section id="approach" title="Approach">
+  <div className="space-y-6 leading-relaxed text-[1.05rem]">
+    <p>
+      I work from a strengths-based, collaborative perspective. I strive to provide encouragement knowing that progress is well within reach. 
+      I have a nurturing and empathic style that helps individuals and families feel safe and comfortable. 
+      I believe trust and safety in the therapeutic relationship are paramount. 
+    </p>
 
-  </p>
+    <p>
+      My initial goal is to build a trusting relationship and create space to explore the challenges you are experiencing. 
+      I view myself as a scientist—listening, examining, observing, and asking the questions needed to create a plan. 
+      I work collaboratively with my clients to help them meet their goals and live their best lives.
+    </p>
+  </div>
 </Section>
 
       <Section id="services" title="Services & Fees">
