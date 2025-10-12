@@ -163,7 +163,7 @@ export default function App() {
           <li>Supporting parents navigating a child’s challenges at home and at school</li>
           <li>Emotion regulation & stress management</li>
           <li>Family communication and routines</li>
-          <li>Life transitions and caregiver support</li>
+          <li>Life transitions</li>
           <li>Anxiety, Depression and Chronic Illnesst</li>
         </ul>
       </Section>
