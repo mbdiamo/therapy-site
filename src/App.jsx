@@ -118,7 +118,7 @@ export default function App() {
     <div className="space-y-6 leading-relaxed text-[1.05rem]">
       <p>
         With over 20 years as a licensed clinical social worker, I’ve worked with children, adults, parents, and families in New York City, Seattle, 
-        and San Diego, and in private practice in Maryland. My approach is empathetic, understanding, and collaborative—I meet you where you are 
+        and San Diego, and in private practice in Maryland. My approach is empathetic, understanding, and collaborative. I meet you where you are 
         and we set goals together.
       </p>
 
