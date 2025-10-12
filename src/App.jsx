@@ -92,18 +92,19 @@ export default function App() {
         space to explore the challenges you’re experiencing. I listen, observe, and ask thoughtful questions to develop a plan together.
       </p>
 
-     <div className="mt-6 grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-  <div className="rounded-2xl border p-5 md:p-6 w-full">
-    <h3 className="font-medium mb-2">Credentials</h3>
-    <ul className="list-disc ml-5 space-y-1 leading-relaxed">
-      <li>B.S., Emory University</li>
-      <li>Master of Social Work (MSW), Columbia University</li>
-      <li>
-        <span className="whitespace-nowrap">
-          Licensed Clinical Social Worker (LCSW-C) in Maryland
-        </span>
-      </li>
-    </ul>
+    <div className="mt-6 mx-auto max-w-screen-lg px-4">
+  <div className="grid md:grid-cols-2 gap-6">
+    <div className="rounded-2xl border p-5 md:p-6 w-full">
+      <h3 className="font-medium mb-2">Credentials</h3>
+      <ul className="list-disc ml-5 space-y-1">
+        <li>B.S., Emory University</li>
+        <li>Master of Social Work (MSW), Columbia University</li>
+        <li>
+          {/* keep “in Maryland” together and avoid breaking the hyphen */}
+          Licensed Clinical Social Worker (LCSW&#8209;C){' '}in&nbsp;Maryland
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
