@@ -88,7 +88,7 @@ export default function App() {
   <div className="grid md:grid-cols-[1fr,220px] items-start gap-8 not-prose">
     <div>
       <p>
-        I’m an experienced therapist who starts with where you are. My initial goal is to build a trusting relationship and create
+        I’m an experienced licensed therapist who starts with where you are. My initial goal is to build a trusting relationship and create
         space to explore the challenges you’re experiencing. I listen, observe, and ask thoughtful questions to develop a plan together.
       </p>
 
