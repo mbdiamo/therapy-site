@@ -16,31 +16,28 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   <body>
-  <!-- your hidden Netlify form, etc. -->
-  <form ...></form>
-
-  <!-- React mounts into this -->
-  <div id="root"></div>
-
-  <!-- Vite loads your React app -->
+ <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 
-  <!-- 👇 PLACE THE FOOTER + PT BADGE RIGHT HERE (bottom of <body>) -->
-  <footer>
-    <a
-      href="https://www.psychologytoday.com/profile/1079375"
-      class="sx-verified-seal"
-      aria-label="Verified by Psychology Today"
-    ></a>
+  <!-- Footer area (outside React) -->
+  <footer style="border-top:1px solid #e5e7eb; margin-top:2rem;">
+    <div style="max-width:64rem;margin:0 auto;padding:1rem;display:flex;gap:1rem;justify-content:flex-end;align-items:center;">
+      <!-- PT will replace this anchor with the verified badge -->
+      <a
+        href="https://www.psychologytoday.com/profile/1079375"
+        class="sx-verified-seal"
+        aria-label="Verified by Psychology Today"
+      ></a>
+    </div>
   </footer>
 
-  <!-- PT script goes AFTER the anchor, still above </body> -->
+  <!-- Psychology Today Verified Badge script (no defer) -->
   <script
     type="text/javascript"
     src="https://member.psychologytoday.com/verified-seal.js"
     data-badge="13"
     data-id="1079375"
     data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xMy9wcm9maWxlLzEwNzkzNzU/Y2FsbGJhY2s9c3hjYWxsYmFjaw=="
-    defer
   ></script>
 </body>
+</html>
