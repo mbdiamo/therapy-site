@@ -118,7 +118,8 @@ export default function App() {
     <div className="space-y-6 leading-relaxed text-[1.05rem]">
       <p>
         For more than two decades, I’ve worked with adults, parents, and families across school settings and adoption services in New York City, Seattle, 
-        and San Diego, and I now offer private practice in Maryland. I’m grateful to do this work and to help people build resilience and meaningful connection.
+        and San Diego. For the past 10 years, I have offered private practice in Maryland. I’m grateful to do this work and to help people build resilience 
+        and meaningful connection.
       </p>
 
       <p>
@@ -127,7 +128,6 @@ export default function App() {
         living with chronic illness, supporting coping, communication, and sustainable routines. I’ve facilitated Listening Mothers® groups that help parents strengthen 
         bonding, attunement, and self-compassion in their parenting style.
       </p>
-
 
         {/* Credentials + Availability cards */}
       <div className="grid md:grid-cols-2 gap-6">
