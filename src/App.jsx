@@ -112,22 +112,22 @@ export default function App() {
       <Nav />
       <Hero />
 
-    <Section id="about" title="About">
+   <Section id="about" title="About">
   <div className="grid md:grid-cols-[1fr,240px] items-start gap-8 not-prose">
     {/* LEFT COLUMN */}
     <div className="space-y-6 leading-relaxed text-[1.05rem]">
       <p>
-        With over 20 years as a licensed clinical social worker, I’ve worked with children, adults, parents, and families in New York City, Seattle, 
-        and San Diego, and in private practice in Maryland. My approach is empathetic, understanding, and collaborative. I meet you where you are 
-        and we set goals together.
+        For more than two decades, I’ve worked with adults, parents, and families across school settings and adoption services in New York City, Seattle, 
+        and San Diego, and I now offer private practice in Maryland. I’m grateful to do this work and to help people build resilience and meaningful connection.
       </p>
 
       <p>
-        My background includes extensive adoption work (domestic and international), pre and post adoption support, attachment, identity, openness) 
-        and work in school settings, partnering with parents and teachers and helping children build social skills and confidence. I also work with 
-        adults living with chronic illness, supporting coping, communication, and sustainable routines. I’ve facilitated Listening Mothers® groups 
-        that help parents strengthen bonding, attunement, and self-compassion to their parenting sytle.
+        My background includes domestic and international adoption, with pre- and post-adoption support focused on attachment, identity, openness, and family transitions. 
+        I’ve also worked in school settings, partnering with parents and teachers and helping children build social skills and confidence. In addition, I work with adults 
+        living with chronic illness, supporting coping, communication, and sustainable routines. I’ve facilitated Listening Mothers® groups that help parents strengthen 
+        bonding, attunement, and self-compassion in their parenting style.
       </p>
+
 
         {/* Credentials + Availability cards */}
       <div className="grid md:grid-cols-2 gap-6">
