@@ -15,5 +15,32 @@
     </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+  <body>
+  <!-- your hidden Netlify form, etc. -->
+  <form ...></form>
+
+  <!-- React mounts into this -->
+  <div id="root"></div>
+
+  <!-- Vite loads your React app -->
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- 👇 PLACE THE FOOTER + PT BADGE RIGHT HERE (bottom of <body>) -->
+  <footer>
+    <a
+      href="https://www.psychologytoday.com/profile/1079375"
+      class="sx-verified-seal"
+      aria-label="Verified by Psychology Today"
+    ></a>
+  </footer>
+
+  <!-- PT script goes AFTER the anchor, still above </body> -->
+  <script
+    type="text/javascript"
+    src="https://member.psychologytoday.com/verified-seal.js"
+    data-badge="13"
+    data-id="1079375"
+    data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xMy9wcm9maWxlLzEwNzkzNzU/Y2FsbGJhY2s9c3hjYWxsYmFjaw=="
+    defer
+  ></script>
+</body>
