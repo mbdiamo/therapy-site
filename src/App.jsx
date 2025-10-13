@@ -126,7 +126,7 @@ export default function App() {
         My background includes extensive adoption work (domestic and international—pre- and post-adoption support, attachment, identity, openness) 
         and work in school settings, partnering with parents and teachers and helping children build social skills and confidence. I also work with 
         adults living with chronic illness, supporting coping, communication, and sustainable routines. I’ve facilitated Listening Mothers® groups 
-        that help parents strengthen bonding, attunement, and mindful caregiving.
+        that help parents strengthen bonding, attunement, and self-compassion to their parenting sytle.
       </p>
 
         {/* Credentials + Availability cards */}
