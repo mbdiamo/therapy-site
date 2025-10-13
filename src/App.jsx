@@ -250,11 +250,15 @@ netlify>
 </Section>
 
 
-      <footer className="border-t">
-        <div className="max-w-5xl mx-auto px-4 py-8 text-sm text-slate-600">
-          © {new Date().getFullYear()} Michelle Greenberg, LCSW · Telehealth only
-        </div>
-      </footer>
+      
+// …later in your component’s return:
+<footer className="border-t mt-16">
+  <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+    <div>© {new Date().getFullYear()} Michelle Greenberg, LCSW-C · Telehealth only · Private practice in Maryland</div>
+
+    {/* PT badge on the right */}
+    <div className="shrink-0">
+      <PTBadge />
     </div>
-  );
-}
+  </div>
+</footer>
