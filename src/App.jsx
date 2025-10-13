@@ -123,7 +123,7 @@ export default function App() {
       </p>
 
       <p>
-        My background includes domestic and international adoption, with pre- and post-adoption support focused on attachment, identity, openness, and family transitions. 
+        My background includes domestic and international adoption, with pre and post adoption support focused on attachment, identity, openness, and family transitions. 
         I’ve also worked in school settings, partnering with parents and teachers and helping children build social skills and confidence. In addition, I work with adults 
         living with chronic illness, supporting coping, communication, and sustainable routines. I’ve facilitated Listening Mothers® groups that help parents strengthen 
         bonding, attunement, and self-compassion in their parenting style.
