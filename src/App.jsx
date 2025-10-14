@@ -177,7 +177,7 @@ export default function App() {
     </p>
 
     <p>
-      My initial goal is to build a trusting relationship and create space to explore the challenges you are experiencing. 
+      My initial goal is to build a trusting relationship and create space to explore the challenges my clients are experiencing. 
       I view myself as a scientist—listening, examining, observing, and asking the questions needed to create a plan. 
       I work collaboratively with my clients to help them meet their goals and live their best lives.
     </p>
