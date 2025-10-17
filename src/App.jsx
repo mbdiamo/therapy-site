@@ -133,20 +133,23 @@ export default function App() {
       </Section>
 
       <Section id="approach" title="Approach">
-        <div className="space-y-6 leading-relaxed text-[1.05rem]">
-          <p>
-            I work from a strengths-based, collaborative perspective. I strive to provide encouragement knowing that progress is well within reach.
-            I have a nurturing and empathic style that helps individuals and families feel safe and comfortable.
-            I believe trust and safety in the therapeutic relationship are paramount.
-          </p>
+  <div className="space-y-6 leading-relaxed text-[1.05rem]">
+    <p>
+      I work from a strengths-based, collaborative perspective. I strive to provide
+      encouragement knowing that progress is well within reach. I have a nurturing and
+      empathic style that helps individuals and families feel safe and comfortable. I
+      believe that trust and safety in the therapeutic relationship are paramount.
+    </p>
 
-          <p>
-            My initial goal is to build a trusting relationship and create space to explore the challenges my clients are experiencing.
-            I view myself as a scientist—listening, examining, observing, and asking the questions needed to create a plan.
-            I work collaboratively with my clients to help them meet their goals and live their best lives.
-          </p>
-        </div>
-      </Section>
+    <p>
+      My initial goal is to build a secure relationship and create space to explore the
+      challenges a person is experiencing. I view myself as a scientist—listening,
+      examining, observing, and asking the questions needed to create a plan. I work
+      collaboratively with my clients to help them meet their goals and live their best
+      lives.
+    </p>
+  </div>
+</Section>
 
       <Section id="services" title="Services &amp; Fees">
         <div className="grid md:grid-cols-2 gap-6 not-prose">
