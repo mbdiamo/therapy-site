@@ -156,7 +156,7 @@ export default function App() {
           <div className="rounded-2xl border p-5">
             <h3 className="font-medium mb-2">Sessions</h3>
             <ul className="list-disc ml-5 space-y-1">
-              <li>Initial consultation (20–30 min): complimentary</li>
+              <li>Initial consultation (20 min): complimentary</li>
               <li>Individual session (60 min): $215</li>
               <li>Parent consultation (50 min): $195</li>
             </ul>
