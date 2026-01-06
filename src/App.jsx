@@ -122,15 +122,16 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="specialties" title="Specialties">
-        <ul className="list-disc ml-5 space-y-2">
-          <li>Supporting parents navigating a child’s challenges at home and at school</li>
-          <li>Emotion regulation &amp; stress management</li>
-          <li>Family communication and routines</li>
-          <li>Life transitions</li>
-          <li>Anxiety, Depression and Chronic Illness</li>
-        </ul>
-      </Section>
+    <Section id="specialties" title="Specialties">
+  <ul className="list-disc ml-5 space-y-2">
+    <li>Supporting women through pregnancy, postpartum, and motherhood</li>
+    <li>Supporting parents navigating a child’s challenges at home and at school</li>
+    <li>Emotion regulation &amp; stress management</li>
+    <li>Family communication and routines</li>
+    <li>Life transitions</li>
+    <li>Anxiety, depression, and chronic illness</li>
+  </ul>
+</Section>
 
       <Section id="approach" title="Approach">
   <div className="space-y-6 leading-relaxed text-[1.05rem]">
