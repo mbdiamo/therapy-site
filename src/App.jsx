@@ -121,9 +121,11 @@ export default function App() {
               <div className="rounded-2xl border p-5 md:p-6 w-full">
                 <h3 className="font-medium mb-2">Credentials</h3>
                 <ul className="list-disc ml-5 space-y-1">
+                  <ul className="list-disc ml-5 space-y-1">
                   <li>B.S., Emory University</li>
                   <li>Master of Social Work (MSW), Columbia University</li>
                   <li>Licensed Clinical Social Worker (LCSW-C) in Maryland</li>
+                  <li>PMH-C — Perinatal Mental Health Certified</li>
                 </ul>
               </div>
               <div className="rounded-2xl border p-5 md:p-6 w-full">
