@@ -23,12 +23,14 @@ function Nav() {
     ["Telehealth", "#telehealth"],
     ["Contact", "#contact"],
   ];
+
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
       <nav className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#home" className="font-semibold">
           Michelle Greenberg, LCSW-C, PMH-C
         </a>
+
         <ul className="hidden md:flex gap-5 text-sm">
           {links.map(([label, href]) => (
             <li key={href}>
@@ -38,6 +40,7 @@ function Nav() {
             </li>
           ))}
         </ul>
+
         <a
           href="#contact"
           className="md:hidden inline-block rounded-xl border px-3 py-1 text-sm"
@@ -121,13 +124,13 @@ export default function App() {
               <div className="rounded-2xl border p-5 md:p-6 w-full">
                 <h3 className="font-medium mb-2">Credentials</h3>
                 <ul className="list-disc ml-5 space-y-1">
-                  <ul className="list-disc ml-5 space-y-1">
                   <li>B.S., Emory University</li>
                   <li>Master of Social Work (MSW), Columbia University</li>
                   <li>Licensed Clinical Social Worker (LCSW-C) in Maryland</li>
                   <li>PMH-C — Perinatal Mental Health Certified</li>
                 </ul>
               </div>
+
               <div className="rounded-2xl border p-5 md:p-6 w-full">
                 <h3 className="font-medium mb-2">Availability</h3>
                 <p>
