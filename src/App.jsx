@@ -103,7 +103,7 @@ export default function App() {
             <p>
               For more than two decades, I’ve worked with adults, parents, and
               families across school settings and adoption services in New York
-              City, Seattle, and San Diego. For the past 10 years, I have
+              City, Seattle, and San Diego. For over 10 years, I have
               offered private practice in Maryland. I’m grateful to do this work
               and to help people build resilience and meaningful connection.
             </p>
