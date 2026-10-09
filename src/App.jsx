@@ -113,11 +113,11 @@ export default function App() {
               pre and post adoption support focused on attachment, identity,
               openness, and family transitions. I have provided therapy in
               school settings, partnering with parents and teachers in addition
-              to helping children build social skills and confidence. I have
-              worked with adults living with chronic illness, supporting coping,
-              communication, and sustainable routines. I facilitated Listening
-              Mothers® groups that help parents strengthen bonding, attunement,
-              and self-compassion.
+              to helping children build social skills and confidence. I have also
+              worked with adults living with chronic illness, helping them navigate
+              challenges, strengthen communication, and build manageable daily routines. 
+              I faciliated Listening Mothers® groups that help parents strengthen 
+              bonding, attunement and self-compassion.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
