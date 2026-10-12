@@ -1,96 +1,128 @@
-import React from "react";
 
-function Section({ id, title, children }) {
-  return (
-    <section id={id} className="py-16 scroll-mt-24">
-      <div className="max-w-5xl mx-auto px-4">
-        {title && (
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6">{title}</h2>
-        )}
-        <div className="prose prose-slate max-w-none">{children}</div>
-      </div>
-    </section>
-  );
-}
-
-function Nav() {
-  const links = [
-    ["Home", "#home"],
-    ["About", "#about"],
-    ["Specialties", "#specialties"],
-    ["Approach", "#approach"],
-    ["Services & Fees", "#services"],
-    ["Telehealth", "#telehealth"],
-    ["Contact", "#contact"],
-  ];
-
-  return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
-      <nav className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
-        <a href="#home" className="flex items-center gap-3 min-w-0">
-          <img
-            src="/michelle-greenberg-logo.png"
-            alt=""
-            width={56}
-            height={56}
-            className="w-12 h-12 sm:w-14 sm:h-14 object-contain shrink-0"
-          />
-          <span className="leading-tight">
-            <span className="block font-semibold text-sm sm:text-base">Michelle Greenberg</span>
-            <span className="block mt-1 text-xs tracking-wider text-slate-600">LCSW-C, PMH-C</span>
-          </span>
-        </a>
-
-        <ul className="hidden md:flex flex-wrap gap-x-4 gap-y-2 text-sm">
-          {links.map(([label, href]) => (
-            <li key={href}>
-              <a className="hover:underline" href={href}>
-                {label}
-              </a>
-            </li>
-          ))}
+      <Section id="specialties" title="Specialties">
+        <ul className="list-disc ml-5 space-y-2">
+          <li>Supporting women through pregnancy, postpartum, and motherhood</li>
+          <li>
+            Supporting parents navigating a child’s challenges at home and at
+            school
+          </li>
+          <li>Emotion regulation &amp; stress management</li>
+          <li>Family communication and routines</li>
+          <li>Life transitions</li>
+          <li>Anxiety, depression, and chronic illness</li>
         </ul>
+      </Section>
 
-        <a
-          href="#contact"
-          className="md:hidden inline-block rounded-xl border px-3 py-1 text-sm"
-        >
-          Contact
-        </a>
-      </nav>
-    </header>
-  );
-}
+      <Section id="approach" title="Approach">
+        <div className="space-y-6 leading-relaxed text-[1.05rem]">
+          <p>
+            I work from a strengths-based, collaborative perspective. I strive
+            to provide encouragement knowing that progress is well within reach.
+            I have a nurturing and empathic style that helps individuals and
+            families feel safe and comfortable. I believe that trust and safety
+            in the therapeutic relationship are paramount.
+          </p>
 
-function Hero() {
-  return (
-    <section
-      id="home"
-      className="relative h-[90vh] flex items-center justify-center text-center text-white"
-    >
-      <img
-        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80"
-        alt="Calming beach scene"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-sky-900/40" />
+          <p>
+            My initial goal is to build a secure relationship and create space
+            to explore the challenges a person is experiencing. I view myself as
+            a scientist—listening, examining, observing, and asking the
+            questions needed to create a plan. I work collaboratively with my
+            clients to help them meet their goals and live their best lives.
+          </p>
+        </div>
+      </Section>
 
-      <div className="relative max-w-2xl mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-          Compassionate Therapy
-        </h1>
-        <p className="mt-6 text-lg text-sky-50">
-          Creating space for reflection, growth, and resilience
+      <Section id="services" title="Services &amp; Fees">
+        <div className="grid md:grid-cols-2 gap-6 not-prose">
+          <div className="rounded-2xl border p-5">
+            <h3 className="font-medium mb-2">Sessions</h3>
+            <ul className="list-disc ml-5 space-y-1">
+              <li>Initial consultation (20 min): complimentary</li>
+              <li>Individual session (60 min): $215</li>
+              <li>Parent consultation (50 min): $195</li>
+            </ul>
+          </div>
+          <div className="rounded-2xl border p-5">
+            <h3 className="font-medium mb-2">Insurance</h3>
+            <p>
+              I do <strong>not</strong> accept insurance. I can provide a
+              superbill upon request.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section id="telehealth" title="Telehealth">
+        <p>
+          Sessions are conducted via a secure, HIPAA-aware video platform.
+          You’ll receive a private link before each appointment. Please find a
+          quiet, comfortable space and reliable internet connection.
         </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a
-            href="#contact"
-            className="rounded-xl bg-white text-sky-900 px-6 py-2 font-medium shadow hover:bg-slate-100"
-          >
-            Request a Consultation
-          </a>
-          <a
-            href="#about"
-            className="rounded-xl border border-white px-6 py-2 font-medium hover:bg-white/10"
-          >
-            Learn More
+      </Section>
+
+      <Section id="contact" title="Contact">
+        <p className="mb-6">
+          Please share a few details below. I’ll be in touch to schedule a
+          brief consultation.
+        </p>
+
+        <form
+          name="contact"
+          method="POST"
+          action="/thanks.html"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          className="grid gap-4 max-w-xl not-prose"
+          netlify
+        >
+          <input type="hidden" name="form-name" value="contact" />
+
+          <p className="hidden">
+            <label>
+              Don’t fill this out: <input name="bot-field" />
+            </label>
+          </p>
+
+          <label className="block">
+            <span className="text-sm">Name</span>
+            <input
+              name="name"
+              required
+              className="mt-1 w-full rounded-lg border px-3 py-2"
+            />
+          </label>
+
+          <label className="block">
+            <span className="text-sm">Email</span>
+            <input
+              type="email"
+              name="email"
+              required
+              className="mt-1 w-full rounded-lg border px-3 py-2"
+            />
+          </label>
+
+          <label className="block">
+            <span className="text-sm">Message</span>
+            <textarea
+              name="message"
+              rows={4}
+              className="mt-1 w-full rounded-lg border px-3 py-2"
+            />
+          </label>
+
+          <button className="rounded-xl bg-slate-900 text-white px-5 py-2 w-fit">
+            Send
+          </button>
+          <p className="text-xs text-slate-500">
+            By submitting, you consent to being contacted by email.
+          </p>
+        </form>
+      </Section>
+
+      <footer className="border-t mt-16">
+        <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+          <div>
+            © {new Date().getFullYear()} Michelle Greenberg, LCSW-C, PMH-C ·
+            Telehealth only · Private practice in Maryland
