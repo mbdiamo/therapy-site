@@ -94,3 +94,4 @@ function Hero() {
             className="rounded-xl border border-white px-6 py-2 font-medium hover:bg-white/10"
           >
             Learn More
+          </a>
