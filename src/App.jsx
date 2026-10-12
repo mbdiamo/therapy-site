@@ -79,7 +79,7 @@ function Hero() {
           height={192}
           className="w-36 h-36 md:w-48 md:h-48 object-contain mx-auto mb-8 mix-blend-multiply"
         />
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
           Compassionate Therapy
         </h1>
         <p className="mt-5 text-lg md:text-2xl leading-relaxed max-w-3xl mx-auto">
