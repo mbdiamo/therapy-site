@@ -5,7 +5,10 @@ function Section({ id, title, children }) {
     <section id={id} className="py-16 scroll-mt-24">
       <div className="max-w-5xl mx-auto px-4">
         {title && (
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6">{title}</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+            {title}
+            <span aria-hidden="true" className="block mt-3 h-0.5 w-12 bg-[#866BA6]" />
+          </h2>
         )}
         <div className="prose prose-slate max-w-none">{children}</div>
       </div>
@@ -29,11 +32,11 @@ function Nav() {
       <nav className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
         <a href="#home" className="flex items-center gap-3 min-w-0">
           <img
-            src="/michelle-greenberg-logo.png"
+            src="/michelle-greenberg-logo-lavender.png"
             alt=""
             width={56}
             height={56}
-            className="w-12 h-12 sm:w-14 sm:h-14 object-contain shrink-0"
+            className="w-12 h-12 sm:w-14 sm:h-14 object-contain shrink-0 mix-blend-multiply"
           />
           <span className="leading-tight">
             <span className="block font-semibold text-sm sm:text-base">Michelle Greenberg</span>
@@ -44,7 +47,7 @@ function Nav() {
         <ul className="hidden md:flex flex-wrap gap-x-4 gap-y-2 text-sm">
           {links.map(([label, href]) => (
             <li key={href}>
-              <a className="hover:underline" href={href}>
+              <a className="hover:text-[#70548F] hover:underline underline-offset-8 decoration-[#866BA6]" href={href}>
                 {label}
               </a>
             </li>
@@ -66,41 +69,99 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative h-[90vh] flex items-center justify-center text-center text-white"
+      className="min-h-[75vh] flex items-center justify-center bg-[#F3EFF8] text-slate-800 py-16 md:py-20"
     >
-      <img
-        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80"
-        alt="Calming beach scene"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-sky-900/40" />
-
-      <div className="relative max-w-2xl mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
+      <div className="max-w-4xl mx-auto px-4 text-center">
+        <img
+          src="/michelle-greenberg-logo-lavender.png"
+          alt=""
+          width={192}
+          height={192}
+          className="w-36 h-36 md:w-48 md:h-48 object-contain mx-auto mb-8 mix-blend-multiply"
+        />
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
           Compassionate Therapy
         </h1>
-        <p className="mt-6 text-lg text-sky-50">
-          Creating space for reflection, growth, and resilience
+        <p className="mt-5 text-lg md:text-2xl leading-relaxed max-w-3xl mx-auto">
+          Supporting adults and parents through anxiety, depression, and life transitions.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a
             href="#contact"
-            className="rounded-xl bg-white text-sky-900 px-6 py-2 font-medium shadow hover:bg-slate-100"
+          className="rounded-full bg-[#70548F] text-white px-7 py-3 font-medium hover:bg-[#60467D] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#70548F] transition-colors"
           >
             Request a Consultation
           </a>
           <a
             href="#about"
-            className="rounded-xl border border-white px-6 py-2 font-medium hover:bg-white/10"
+            className="rounded-full border-2 border-[#70548F] text-[#70548F] px-7 py-3 font-medium hover:bg-[#E8DFF1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#70548F] transition-colors"
           >
             Learn More
           </a>
-            </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
- 
+
+export default function App() {
+  return (
+    <div>
+      <Nav />
+      <Hero />
+
+      <Section id="about" title="About">
+        <div className="grid md:grid-cols-[1fr,240px] items-start gap-8 not-prose">
+          <div className="space-y-6 leading-relaxed text-[1.05rem]">
+            <p>
+              For more than two decades, I’ve worked with adults, parents, and
+              families across school settings and adoption services in New York
+              City, Seattle, and San Diego. For over 10 years, I have
+              offered private practice in Maryland. I’m grateful to do this work
+              and to help people build resilience and meaningful connection.
+            </p>
+
+            <p>
+              My background includes domestic and international adoption, with
+              pre and post adoption support focused on attachment, identity,
+              openness, and family transitions. I have provided therapy in
+              school settings, partnering with parents and teachers in addition
+              to helping children build social skills and confidence. I have also
+              worked with adults living with chronic illness, helping them navigate
+              challenges, strengthen communication, and build manageable daily routines. 
+              I faciliated Listening Mothers® groups that help parents strengthen 
+              bonding, attunement and self-compassion.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="rounded-2xl border p-5 md:p-6 w-full">
+                <h3 className="font-medium mb-2">Credentials</h3>
+                <ul className="list-disc ml-5 space-y-1">
+                  <li>B.S., Emory University</li>
+                  <li>Master of Social Work (MSW), Columbia University</li>
+                  <li>Licensed Clinical Social Worker (LCSW-C) in Maryland</li>
+                  <li>PMH-C — Perinatal Mental Health Certified</li>
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border p-5 md:p-6 w-full">
+                <h3 className="font-medium mb-2">Availability</h3>
+                <p>
+                  Telehealth only. Currently accepting new clients for virtual
+                  sessions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="/headshot.png"
+            alt="Michelle Greenberg, LCSW-C, PMH-C"
+            className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-2xl shadow justify-self-center md:justify-self-end"
+          />
+        </div>
+      </Section>
+
       <Section id="specialties" title="Specialties">
         <ul className="list-disc ml-5 space-y-2">
           <li>Supporting women through pregnancy, postpartum, and motherhood</li>
@@ -214,7 +275,7 @@ function Hero() {
             />
           </label>
 
-          <button className="rounded-xl bg-slate-900 text-white px-5 py-2 w-fit">
+          <button className="rounded-xl bg-[#70548F] hover:bg-[#60467D] text-white px-5 py-2 w-fit">
             Send
           </button>
           <p className="text-xs text-slate-500">
@@ -228,5 +289,9 @@ function Hero() {
           <div>
             © {new Date().getFullYear()} Michelle Greenberg, LCSW-C, PMH-C ·
             Telehealth only · Private practice in Maryland
-         
-        
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
